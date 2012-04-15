@@ -9,6 +9,10 @@
 </body>
 
 <template name="leaderboard">
+  <div class="sorting">
+    <input type="button" class="sortby scores" value="sort by score">
+    <input type="button" class="sortby names" value="sort by names">
+  </div>
   <div class="leaderboard">
     {{#each players}}
       {{> player}}
